@@ -12,3 +12,15 @@ I wanted to see if I could write a field:value mapping between Sigma and Cb EDR 
 Python scripts perform faster than PowerShell but in order to share cyber defense information as widely as possible, I typically script with PowerShell since it comes packaged with Windows and in my experience, many cyber defenders don't have access to Python.
 
 I have written scripts to export specified events from Carbon Black EDR via the REST API endpoints for various integrations and automated triage.  I'm hoping this will be another capability that I can include as a portable cyber response tool without needing to stand up an ELK stack.  
+
+# Example of how to use Chainsaw to leverage Sigma rules and generate alerts on dumped Carbon Black EDR JSON formatted process docs
+
+# Provide the Sigma mapping file, Sigma rules folder, and directory that contains the JSON process documents
+.\chainsaw.exe hunt -m CB_Sigma_map.yml -s ".\Chainsaw_Project\chainsaw\rules\windows" ".\Chainsaw_Project\normalized_events"
+
+# OR get a CSV output returned by providing an output folder as follows:
+.\chainsaw.exe hunt --csv -o .\output -m CB_Sigma_map.yml -s path\to\sigma\rules .\Chainsaw_Project\CB_Process_Data\normalized_events
+
+# OR (if all processes events are contained in a single combined jsonl doc)
+
+chainsaw hunt -m CB_Sigma_map.yml -s path\to\sigma\rules  .\Chainsaw_Project\CB_Process_Data\combined.normalized.jsonl
