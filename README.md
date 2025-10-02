@@ -14,6 +14,7 @@ Python scripts perform faster than PowerShell but in order to share cyber defens
 I have written scripts to export specified events from Carbon Black EDR via the REST API endpoints for various integrations and automated triage.  I'm hoping this will be another capability that I can include as a portable cyber response tool without needing to stand up an ELK stack.  
 
 #### Example of how to use Chainsaw to leverage Sigma rules and generate alerts on dumped Carbon Black EDR JSON formatted process docs
+This solution has been tested successfully with [Chainsaw v2.12.0-1](https://github.com/WithSecureLabs/chainsaw)
 
 #### Provide the Sigma mapping file, Sigma rules folder, and directory that contains the JSON process documents
 ```PowerShell
