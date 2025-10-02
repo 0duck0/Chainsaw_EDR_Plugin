@@ -1,0 +1,1237 @@
+{
+				"elapsed": 0.09876656532287598,
+				"process": {
+								"unique_id": "00132d4d-0000-00a8-01dc-1bd6abe7dbb3-019909388fd1",
+								"sensor_id": 1256781,
+								"hostname": "northcampus-Wint",
+								"group": "workstations",
+								"os_type": "windows",
+								"host_type": "workstation",
+								"interface_ip": "192.168.1.100",
+								"comms_ip": "192.168.1.100",
+								"parent_unique_id": "00132d4d-0000-07f8-01dc-17c097429efc-000000000001",
+								"start": "2025-09-02T06:56:13.532Z",
+								"process_pid": 168,
+								"parent_pid": 2040,
+								"process_md5": "7528ccabaccd5c1748e63e192097472a",
+								"process_sha256": "196cabed59111b6c4bbf78c84a56846d96cbbc4f06935a4fd4e6432ef0ae4083",
+								"cmdline": "C:\\WINDOWS\\system32\\wbem\\wmiprvse.exe -Embedding",
+								"uid": "S-1-5-18",
+								"username": "SYSTEM",
+								"parent_name": "svchost.exe",
+								"path": "c:\\windows\\system32\\wbem\\wmiprvse.exe",
+								"process_name": "wmiprvse.exe",
+								"modload_count": 93,
+								"filemod_count": 25,
+								"regmod_count": 0,
+								"netconn_count": 0,
+								"childproc_count": 12,
+								"crossproc_count": 2,
+								"emet_count": 0,
+								"processblock_count": 0,
+								"fileless_scriptload_count": 0,
+								"logon_type": 0,
+								"last_update": "2025-09-02T06:57:07.058Z",
+								"last_server_update": "2025-09-02T06:58:45.925Z",
+								"terminated": true,
+								"id": "00132d4d-0000-00a8-01dc-1bd6abe7dbb3",
+								"parent_id": "00132d4d-0000-07f8-01dc-17c097429efc",
+								"segment_id": 1756796325841,
+								"filtering_known_dlls": false,
+								"total_events_count": 132,
+								"min_last_server_update": "2025-09-02T06:58:45.925Z",
+								"max_last_server_update": "2025-09-02T06:58:45.925Z",
+								"min_last_update": "2025-09-02T06:57:07.058Z",
+								"max_last_update": "2025-09-02T06:57:07.058Z",
+								"sorted_events": [{
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.540000",
+												"data": "2025-09-02 06:56:13.540000|7528ccabaccd5c1748e63e192097472a|c:\\windows\\system32\\wbem\\wmiprvse.exe|196cabed59111b6c4bbf78c84a56846d96cbbc4f06935a4fd4e6432ef0ae4083",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.556000",
+												"data": "2025-09-02 06:56:13.556000|4f79bd21f6365cc8f8ab80c6af49fc5a|c:\\windows\\system32\\ntdll.dll|b736bb2f84fe0fdb0ac79a70d4597ac91a98c8a6cebdee7c88ff13724e9836cd",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.572000",
+												"data": "2025-09-02 06:56:13.572000|0cf0388a82223280dc0760c81e806763|c:\\windows\\system32\\kernel32.dll|70f1e69a1d0602ec9e02c713ff2fc1238ddc7fe02ad28fa344954dda446e5236",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.572000",
+												"data": "2025-09-02 06:56:13.572000|9629330b999a1347d71e58433087f864|c:\\windows\\system32\\kernelbase.dll|24585f5404066cda11d183afcd425ff4210bab18e391571a39ada4b047d3a8c6",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.572000",
+												"data": "2025-09-02 06:56:13.572000|62e6651d32c277a4cabc05238f042028|c:\\windows\\system32\\msvcrt.dll|bfc7d55f0756a4f0b4c9288a67e91c6144a980cdef10b3fe3f260c8cb26f5b3f",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.587000",
+												"data": "2025-09-02 06:56:13.587000|77312db4517a21a3c5abd2ed5e55919d|c:\\windows\\system32\\wbemcomn.dll|73b8c80527f1805b46f2206f22c96112ce4d247cc30911f76f334a5901ed304c",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.587000",
+												"data": "2025-09-02 06:56:13.587000|cab2731834469868230573b2126c7fd0|c:\\windows\\system32\\ncobjapi.dll|9ffb48b035c129eb7fe21814cb87bb64c45cd7ebc3ea0f8e30bd9d46d554c040",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.587000",
+												"data": "2025-09-02 06:56:13.587000|78fba71779fd590f7daeffa1337dafa9|c:\\windows\\system32\\wbem\\fastprox.dll|d80a224f372c7bdf53a7a2ae208e1303877117d75e87dd6836a35202d7c6eb4a",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.587000",
+												"data": "2025-09-02 06:56:13.587000|4bbe26f877e41e644ec08cceaf2dd1e2|c:\\windows\\system32\\combase.dll|c40620e35377110474f59de7ce124da40c3239c9e7e6f696cf442efef3439bf5",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.587000",
+												"data": "2025-09-02 06:56:13.587000|24ebedc58aa4ff23043bf79b05d267d4|c:\\windows\\system32\\ucrtbase.dll|d93ce42cd625510b2355de086bcd19e2c11307ccade7bad62b09c7f340a866ba",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.587000",
+												"data": "2025-09-02 06:56:13.587000|788c3bb76953e008a7f3298c832cec02|c:\\windows\\system32\\rpcrt4.dll|6476a9c56d453d290154d554da877974c4ba5ca1e6b5aed6c1c7e9822783565b",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|02af98a610bd623ad410c93f62d25b5a|c:\\windows\\system32\\advapi32.dll|2a20df0da04ad001e151e9b702de9a76b706d9c4303ba2f9c66921bc7e0a61fc",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|b36cc0ffbfa1f162aca87aeb44e76c69|c:\\windows\\system32\\sechost.dll|071d342ab8d292ec44d0db17ec359b215823dba465fe917f77427078593a2611",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|8ca0b959f7bac47d2ca37dfa4218fd7a|c:\\windows\\system32\\bcrypt.dll|8d2ac5c5884baed588ad581bf79307107ddf9347291ad56829e355999ea6e163",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|fe3472b66f56da5031c554eb9f4af2f0|c:\\windows\\system32\\user32.dll|55dd3d6c17f493ec36cc6abc10fcd4a4f53852c9e7129d58184b6cbf5ebd1588",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|fbae15f41b0dbcc969fbe06d86ff4171|c:\\windows\\system32\\win32u.dll|b155600aa18478655044ffb0970607ae1f7889dc80006bd5206b1bb9cdc55eb8",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|a21183f072c66f5a3293c947d8a06f88|c:\\windows\\system32\\gdi32.dll|0f03a3fd040a4357f44d2d3f2015c04a6c24e8c9c3d8a726ff954347ac4ae33f",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|1db5ddc74e90d3760877ddc4303633b0|c:\\windows\\system32\\gdi32full.dll|b72bb702bc9902788df826eab4cb382e38599b365ac279aec24c4c6943b3d95a",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.603000",
+												"data": "2025-09-02 06:56:13.603000|26e256e40cdb3b9cfe599653c8708cb0|c:\\windows\\system32\\msvcp_win.dll|08f2fe38501a88a7d3c13976733c2ca08b5597c3328d51fa1f5f5d8474c33ecf",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.619000",
+												"data": "2025-09-02 06:56:13.619000|995f7622a82558cd3123332261c10a38|c:\\windows\\system32\\kernel.appcore.dll|df0c82531733fe4f1e2398387e8a47146a00eb98ce57eecb95b401028514e13b",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.619000",
+												"data": "2025-09-02 06:56:13.619000|4608c7eadc8bf7cd17c0086b3d6314ff|c:\\windows\\system32\\bcryptprimitives.dll|e353c108029299a2d8a35ceb9306095580b56ad2e20ca0baf7219b3602fa697a",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.619000",
+												"data": "2025-09-02 06:56:13.619000|33c9102222343d9366dc06d48caeef01|c:\\windows\\system32\\clbcatq.dll|523eb001ac892a3724fd09a5b4faa6a7fb6661e3c7dad07598de2a41f9fdcdbb",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.634000",
+												"data": "2025-09-02 06:56:13.634000|82e44b0b0b989f51269a2e249561555a|c:\\windows\\system32\\wbem\\wbemprox.dll|0a69ce647075617e2069b6fb41b10ccc12e3023f5f2abedb970171eb627e5510",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.634000",
+												"data": "2025-09-02 06:56:13.634000|44bf3195dc2f717fee1dcdfd83fd04cb|c:\\windows\\system32\\oleaut32.dll|11407f7657695e8f7e0ee061ad690a98347681256572bc0a149baf875d4a0c60",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.634000",
+												"data": "2025-09-02 06:56:13.634000|c4a9628229e54685d2e76ad6bf750b50|c:\\windows\\system32\\wbem\\wbemsvc.dll|0bbb26912fe3344a2bb8091d3f9691d7c8f61f599b08d23265fdb95739908c40",
+												"segment_id": 1756796325841
+								}, {
+												"type": "crossproc",
+												"time": "2025-09-02 06:56:13.650000",
+												"data": "ProcessOpen|2025-09-02 06:56:13.650000|00132d4d-0000-12cc-01dc-17c098ac4341-000000000001|8ec922c7a58a8701ab481b7be9644536|c:\\windows\\system32\\svchost.exe|1|1054017|False|True|949bfb5b4c7d58d92f3f9c5f8ec7ca4ceaffd10ec5f0020f0a987c472d61c54b",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.665000",
+												"data": "2025-09-02 06:56:13.665000|2c6d07dcf4cdd6177b67f210019d5c61|c:\\windows\\system32\\wbem\\wmiutils.dll|413cdaacd75c19725591059f70cb7f1c0c1aeaa6e1d43c70a687310859c1813f",
+												"segment_id": 1756796325841
+								}, {
+												"type": "crossproc",
+												"time": "2025-09-02 06:56:13.665000",
+												"data": "ProcessOpen|2025-09-02 06:56:13.665000|00132d4d-0000-092c-01dc-17c09b961861-000000000001|7494262f18f5e70959ad5f708a056582|c:\\program files\\common files\\mcafee\\avsolution\\mcshield.exe|1|2097151|False|True|1458fe62d3ee69ec0ba5fcdfa30f75e9a22d6ca6f5c7193a30e1a46a068fa5cb",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.681000",
+												"data": "2025-09-02 06:56:13.681000|17f7e64d20532103090938f39d2a328b|c:\\windows\\ccm\\appprovider.dll|3a7a02db71926799322250d98eb798dcc61e3939928fa030b2f3f8c550598182",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.681000",
+												"data": "2025-09-02 06:56:13.681000|80c2759eabcfc758d420a56eb8874455|c:\\windows\\system32\\ole32.dll|7d658e100ec2cbf61fba5e4c71632c456ad6fde9d2a6c65a646a9b1b34a0c958",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.681000",
+												"data": "2025-09-02 06:56:13.681000|7acbc57d268a691247b4a94fecfa42b4|c:\\windows\\system32\\msvcp140.dll|b99eb28a471311113f5c4109cb3c463f39cfd9bdb3b07f706204dedddb4516a1",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.681000",
+												"data": "2025-09-02 06:56:13.681000|4fac0323ebf6275e9180313d23a09f2b|c:\\windows\\system32\\ccmcore.dll|914c8783dc886b4bd5f4a740abf4bf83bbaac85f4116f2016e78e94e6b85c29a",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.681000",
+												"data": "2025-09-02 06:56:13.681000|c0c0b4c611561f94798b62eb43097722|c:\\windows\\system32\\vcruntime140_1.dll|6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.681000",
+												"data": "2025-09-02 06:56:13.681000|1e020fee7fe4761b2f5792ff1c607dda|c:\\windows\\system32\\psapi.dll|69f405cc2dd111d208799ad47273551e9d572423bcf251bc9347d481a162b207",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.697000",
+												"data": "2025-09-02 06:56:13.697000|32da96115c9d783a0769312c0482a62d|c:\\windows\\system32\\vcruntime140.dll|052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.697000",
+												"data": "2025-09-02 06:56:13.697000|557672a2d4c8867cb6324e2e3f2e0046|c:\\windows\\system32\\shlwapi.dll|8f2545142b1e78e6fc40572e412466da5ee600444784858182a4110519805783",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.697000",
+												"data": "2025-09-02 06:56:13.697000|70959b343c0acad9f3ef8053e10d4192|c:\\windows\\system32\\version.dll|becadaa1d7471d428c61270ff0a71b851f9d2598ccb4a8921b1ebcdc9985c659",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.697000",
+												"data": "2025-09-02 06:56:13.697000|7a400b5d87586001fc68aad7d318d0c8|c:\\windows\\system32\\wtsapi32.dll|fc84f0a38f2bcd789b293d0cbf8cbcd3faa33d71d55f38599eff051332dcf5f1",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.712000",
+												"data": "2025-09-02 06:56:13.712000|7eb8b76deb30e5ce3663a9e254f4ef92|c:\\windows\\ccm\\ccmprofiler.dll|6407eee407167aecda611e554a441def7756c0c5432b3c448bd362cbdf966a4b",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.728000",
+												"data": "2025-09-02 06:56:13.728000|94279d6ccb404d96472352aff4d02e46|c:\\windows\\ccm\\ccmsqlce.dll|0d1256f2c49c8508f09e1f9f5199135c283f6679fdbbeee44279245d4f93118b",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.728000",
+												"data": "2025-09-02 06:56:13.728000|6d0654bf58ab9ffba4a0e38fe76807fb|c:\\windows\\ccm\\sensorendpoint.dll|ee38b35875e843a1423db0f739456a9b612f3d4051f288954177cade9101d54c",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.728000",
+												"data": "2025-09-02 06:56:13.728000|b20eb7b148d126404d7057532a308d48|c:\\windows\\ccm\\ccmutillib.dll|a4a011e136a054885abb4a0f816766cbd21b58f960e1064a169280a3a64e3868",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.728000",
+												"data": "2025-09-02 06:56:13.728000|cf9c57d58dd20d85fa362cc50ddb49c7|c:\\windows\\system32\\crypt32.dll|c9dd40c83fb5fffdba62f83454da3a7a7890e6c33352842670c059677dd06e3d",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.728000",
+												"data": "2025-09-02 06:56:13.728000|9de8bde161b8654793698963daaf9098|c:\\windows\\system32\\ws2_32.dll|3fd679780f07a4bd64671c3b8c271c0c60aac5a3e0039d15129a6e52812373ca",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.728000",
+												"data": "2025-09-02 06:56:13.728000|703f349983466211a4bc992398ca1333|c:\\windows\\system32\\wintrust.dll|65f103255c0351107cddf2c560235a0686741a8352cb26c1828251f1b1134317",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.728000",
+												"data": "2025-09-02 06:56:13.728000|6403f09bc36853b18bb027fc78f685b6|c:\\windows\\ccm\\ccmtask.dll|50066fec3b0c01f466ebd2ad72f68b3de155335d165c19a9f484dea0bd2caaa2",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.744000",
+												"data": "2025-09-02 06:56:13.744000|94f67d3703c30de2cf08aecdb3132645|c:\\windows\\system32\\iphlpapi.dll|43f65126a4cded73f6c413f58b0893ad4b8a261c82e3efa5a80a9ae31ebf7bea",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.744000",
+												"data": "2025-09-02 06:56:13.744000|7b120395eaff8aa3e4f342bf015aab4e|c:\\windows\\system32\\msasn1.dll|86f1652236d1d0569f28298a3f36bd3822e5c1447eb5b0990f88024f502c7eb5",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:13.790000",
+												"data": "2|2025-09-02 06:56:13.790000|c:\\windows\\ccm\\logs\\appdiscovery.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.790000",
+												"data": "2025-09-02 06:56:13.790000|ce0d07dc874d66bca8e67fbdefd298a4|c:\\windows\\ccm\\appexcnlib.dll|36023bd17e8f8fe86ad2a9085cc711ca93f856c74ad74e9bc5119fa1c4292a71",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.806000",
+												"data": "2025-09-02 06:56:13.806000|4991c1bc92516754b2d0a4ba9d92cfa6|c:\\windows\\system32\\shell32.dll|1372216e5c45a0a7891cd2e85a231974f3f4b9ebafb13d63b99c6ce41e2632c4",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.806000",
+												"data": "2025-09-02 06:56:13.806000|a9b946fca8ba3b3aebcdda9c310af4e4|c:\\windows\\system32\\wintypes.dll|070cc5b1a406551ea698c4475f4567d0906f7f1150ccca69e17ab769952e7787",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.806000",
+												"data": "2025-09-02 06:56:13.806000|dcbca459a2eb91d5962e6ecfc9127340|c:\\windows\\system32\\userenv.dll|6112850621db6da94b1c2308e9c44110bb78c00c1a41e3cd8e5e914450b5fac9",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.837000",
+												"data": "2025-09-02 06:56:13.837000|539538a976a8f011d50da3fce8478db7|c:\\windows\\ccm\\scripthandler.dll|ffc53a9b0a028a86808c1fb73928c07a47af9d09190f7d543c2740c7d34a0e95",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.837000",
+												"data": "2025-09-02 06:56:13.837000|8c351bb3839d22c9d374b8d4c1b072b3|c:\\windows\\system32\\msi.dll|820053592ee2a82141e81d86df76e06cf3746d2885d09ea7c4257d05f2b3955f",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.900000",
+												"data": "2025-09-02 06:56:13.900000|dce780d29ee094bc9595857a65f13e39|c:\\windows\\system32\\windows.storage.dll|5b7d5d2503ccd1430f8464a487f820954eb8d420f1d53ccaf87dfe781387a2a2",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:13.900000",
+												"data": "2025-09-02 06:56:13.900000|b982f95cbca977017e83f83135dba1fa|c:\\windows\\system32\\shcore.dll|372a2eb285c5cb1fdf60ef7d95ac470476ff24d09cb13b9652ec7fb4ce9b9fe8",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:13.915000",
+												"data": "1|2025-09-02 06:56:13.915000|c:\\windows\\ccm\\systemtemp\\0c9f27cc-8d02-45d2-8ac5-5a2bf5e680a7.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:13.915000",
+												"data": "2|2025-09-02 06:56:13.915000|c:\\windows\\ccm\\systemtemp\\0c9f27cc-8d02-45d2-8ac5-5a2bf5e680a7.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:13.915000",
+												"data": "1|2025-09-02 06:56:13.915000|\\device\\namedpipe||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:13.931000",
+												"data": "2|2025-09-02 06:56:13.931000|c:\\windows\\ccm\\logs\\systemtemplockdown.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:13.947000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 16080,
+																"processId": "00132d4d-0000-3ed0-01dc-1bd6ac25edbf-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "start",
+																"start": "2025-09-02T06:56:13.947000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:16.291000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 16080,
+																"processId": "00132d4d-0000-3ed0-01dc-1bd6ac25edbf-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "end",
+																"end": "2025-09-02T06:56:16.291000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:16.322000",
+												"data": "4|2025-09-02 06:56:16.322000|c:\\windows\\ccm\\systemtemp\\0c9f27cc-8d02-45d2-8ac5-5a2bf5e680a7.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:16.369000",
+												"data": "1|2025-09-02 06:56:16.369000|c:\\windows\\ccm\\systemtemp\\e35b50ea-b687-429a-b546-11a94a190e93.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:16.369000",
+												"data": "2|2025-09-02 06:56:16.369000|c:\\windows\\ccm\\systemtemp\\e35b50ea-b687-429a-b546-11a94a190e93.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:16.401000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 26376,
+																"processId": "00132d4d-0000-6708-01dc-1bd6ad9d61aa-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "start",
+																"start": "2025-09-02T06:56:16.401000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:17.932000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 26376,
+																"processId": "00132d4d-0000-6708-01dc-1bd6ad9d61aa-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "end",
+																"end": "2025-09-02T06:56:17.932000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:17.964000",
+												"data": "4|2025-09-02 06:56:17.964000|c:\\windows\\ccm\\systemtemp\\e35b50ea-b687-429a-b546-11a94a190e93.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:18.010000",
+												"data": "1|2025-09-02 06:56:18.010000|c:\\windows\\ccm\\systemtemp\\5876449c-c781-4b1b-a5f3-dfd3a1ae40fd.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:18.010000",
+												"data": "2|2025-09-02 06:56:18.010000|c:\\windows\\ccm\\systemtemp\\5876449c-c781-4b1b-a5f3-dfd3a1ae40fd.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:18.042000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 12784,
+																"processId": "00132d4d-0000-31f0-01dc-1bd6ae979700-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "start",
+																"start": "2025-09-02T06:56:18.042000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:19.526000",
+												"data": "2|2025-09-02 06:56:19.526000|\\device\\namedpipe||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:19.729000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 12784,
+																"processId": "00132d4d-0000-31f0-01dc-1bd6ae979700-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "end",
+																"end": "2025-09-02T06:56:19.729000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:19.760000",
+												"data": "4|2025-09-02 06:56:19.760000|c:\\windows\\ccm\\systemtemp\\5876449c-c781-4b1b-a5f3-dfd3a1ae40fd.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:19.807000",
+												"data": "1|2025-09-02 06:56:19.807000|c:\\windows\\ccm\\systemtemp\\128d3b7a-7fa4-419a-b9b4-d8e9fbeb23b1.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:19.807000",
+												"data": "2|2025-09-02 06:56:19.807000|c:\\windows\\ccm\\systemtemp\\128d3b7a-7fa4-419a-b9b4-d8e9fbeb23b1.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:19.839000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 14356,
+																"processId": "00132d4d-0000-3814-01dc-1bd6afa97558-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "start",
+																"start": "2025-09-02T06:56:19.839000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:21.886000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 14356,
+																"processId": "00132d4d-0000-3814-01dc-1bd6afa97558-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "end",
+																"end": "2025-09-02T06:56:21.886000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:21.917000",
+												"data": "4|2025-09-02 06:56:21.917000|c:\\windows\\ccm\\systemtemp\\128d3b7a-7fa4-419a-b9b4-d8e9fbeb23b1.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:21.964000",
+												"data": "1|2025-09-02 06:56:21.964000|c:\\windows\\ccm\\systemtemp\\ad4829f6-8922-45ee-8302-d40bb24997be.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:21.964000",
+												"data": "2|2025-09-02 06:56:21.964000|c:\\windows\\ccm\\systemtemp\\ad4829f6-8922-45ee-8302-d40bb24997be.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:21.980000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 16768,
+																"processId": "00132d4d-0000-4180-01dc-1bd6b0f20342-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "start",
+																"start": "2025-09-02T06:56:21.980000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:23.495000",
+												"data": {
+																"md5": "9d8e30daf21108092d5980c931876b7e",
+																"path": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+																"pid": 16768,
+																"processId": "00132d4d-0000-4180-01dc-1bd6b0f20342-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "end",
+																"end": "2025-09-02T06:56:23.495000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:23.527000",
+												"data": "4|2025-09-02 06:56:23.527000|c:\\windows\\ccm\\systemtemp\\ad4829f6-8922-45ee-8302-d40bb24997be.ps1||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.558000",
+												"data": "2025-09-02 06:56:23.558000|e906d10eef37806264c2d13b9e11d0da|c:\\windows\\ccm\\dcmagent_ps.dll|44cd938b89916ff962d6f7268712007f94311c4a4804de54dd209c644caaaa3e",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.589000",
+												"data": "2025-09-02 06:56:23.589000|f1c4424da1369d2196f150ddf21756be|c:\\windows\\system32\\sxs.dll|70d2e0e470e7927f844d1cd0f9c7135fc96910f34bb0ac9ebb50e50a892d1ce6",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.652000",
+												"data": "2025-09-02 06:56:23.652000|198ae7b5f508a1bc9ba3f3cbd4680180|c:\\windows\\ccm\\webapphandler.dll|a704dd8409adf685ed8c8361ef9f2f226e91e75310e10593cc7f705bcd25305d",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.667000",
+												"data": "2025-09-02 06:56:23.667000|546ec8feff4bfbe0e08f2d4f6bb02070|c:\\windows\\ccm\\msihandler.dll|da2e0d45e69549f36dd411a85f9e89ae88ce82709f0a24da662cd755ee3657fc",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.698000",
+												"data": "2025-09-02 06:56:23.698000|9a11bc56aa02b157ad0da257922ea541|c:\\windows\\ccm\\appvhandler.dll|1bc0bbe685fc93c73bb3c8b1ec152c6521b7817a02ef94c8a279cf07ea8f0a06",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.714000",
+												"data": "2025-09-02 06:56:23.714000|e8825b77272917979d41e90ca72ff0d1|c:\\windows\\ccm\\appvcmcore.dll|e817d4bdfc5d538b85969e8aa5d8374f68ebabc57ddb559bedbabed636dc5977",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.730000",
+												"data": "2025-09-02 06:56:23.730000|15bf195f4ce20235ce7cbab5d419c9c9|c:\\windows\\ccm\\raxhandler.dll|9b4da955f0120a7ff1db717ba8e1904f1e958e7365bec5ea99f9527e274ebdbf",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.761000",
+												"data": "2025-09-02 06:56:23.761000|ef3eff89a0a485c6fcbe777ef86d0f38|c:\\windows\\ccm\\localapphandler.dll|f91b75d68a50d5c4b708f1b80f55d7f2c041c5c72568c5943cde90045def485a",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.761000",
+												"data": "2025-09-02 06:56:23.761000|d89360052a989435779890bf9df56a49|c:\\windows\\ccm\\expressionsolver.dll|f8fbabf636c4b304f0f17da298a023af26e8a2a8806971f8b567d8df98a4fbd8",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.808000",
+												"data": "2025-09-02 06:56:23.808000|207839e3ea14071bea6cb052f8144120|c:\\windows\\ccm\\wmidiscoverysource.dll|f74fb783bc82f39acd8654ea68fddc4c73cd15544d26656eca6106afd0559163",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.823000",
+												"data": "2025-09-02 06:56:23.823000|7e6a07d205b7fc65ec043c72040c2295|c:\\windows\\system32\\msxml6.dll|ad9eaebd1ca0270d6f41e0dd65f04738c6bec1870655b65e247a0d2e7a07bc8d",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:23.855000",
+												"data": "2025-09-02 06:56:23.855000|48769cc39ad050f7189261fc5275ffd7|c:\\windows\\ccm\\ccmregistryprovider.dll|efda81c4a62dbfa38f87402020fbed832643938c106e218bb50cf34a93edb3e4",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:23.886000",
+												"data": "2|2025-09-02 06:56:23.886000|c:\\windows\\ccm\\logs\\expressionsolver.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:24.042000",
+												"data": "4|2025-09-02 06:56:24.042000|c:\\windows\\ccm\\logs\\appdiscovery-20250901-024925.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:24.058000",
+												"data": "1|2025-09-02 06:56:24.058000|c:\\windows\\ccm\\logs\\appdiscovery-20250902-025624.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:24.058000",
+												"data": "2|2025-09-02 06:56:24.058000|c:\\windows\\ccm\\logs\\appdiscovery-20250902-025624.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:24.058000",
+												"data": "2025-09-02 06:56:24.058000|485d15cd88efac823ad89c913f7b6d19|c:\\windows\\system32\\ntmarta.dll|5269a7caf89b558eebe87324437d1d949cf209f144347b2ca2106f0bf939d01c",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:24.198000",
+												"data": "2025-09-02 06:56:24.198000|f3bd8cd0e9dedfa5297af3dd01e07a04|c:\\windows\\ccm\\ccmfilesystemprovider.dll|d813db1572379425fbf0448b9d2a1c46650bb48cac0119b08f5b1e8c55ab8616",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:24.214000",
+												"data": "2|2025-09-02 06:56:24.214000|c:\\windows\\ccm\\logs\\dcmwmiprovider.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:24.230000",
+												"data": "2025-09-02 06:56:24.230000|d82bfa000690c998fd445b265a794efa|c:\\windows\\system32\\profapi.dll|b35b4c29f30a627e7adba4fb6ac914f7215a362f04d56e0d2884007a31fe9d52",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:25.855000",
+												"data": "2025-09-02 06:56:25.855000|2a849391790dea2a80a83f62a52354ec|c:\\windows\\ccm\\ccmmsiprovider.dll|8412e9a32bce839c86aac77fe17c298e61ebfe6785bb21d1714c4f97879977f6",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:29.559000",
+												"data": "2025-09-02 06:56:29.559000|173ca8c126a5417e1b666885c1d404e7|c:\\windows\\ccm\\tsdthandler.dll|ef8d8a7d9cd3f46eec1aa059973acc5a6721f81a54f96c061d504a9d312e49fe",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:29.575000",
+												"data": "2025-09-02 06:56:29.575000|4db2dd4d6f1fb28158b2b0b9fc676d7d|c:\\windows\\ccm\\appxhandler.dll|7341f15e5e704a063644e202fd1a52d8338c1f3fdecbaacdf963c87025289f1d",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:29.606000",
+												"data": "2025-09-02 06:56:29.606000|b1ff3434c53566391758cf3fb42f5d78|c:\\windows\\ccm\\appv5xhandler.dll|5794feaaff9f2cae7f27c799fa73c7b52c46776acd40b8b283322c9171982c3c",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.216000",
+												"data": "2025-09-02 06:56:35.216000|a099cca61f9e45a1acf584602b756922|c:\\windows\\ccm\\udaprovider.dll|0db2b6575b0f699c06d86f3027241de65d028e4ac850fc59f549d19287160731",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.216000",
+												"data": "2025-09-02 06:56:35.216000|e444df1cdcdb54c50c39389486c55f83|c:\\windows\\ccm\\comanagementhandler.dll|67ed6a632471eb4c45fefeb05f5674a8cde3908d9a0fea1d5c5a3b9c4ac3748b",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.216000",
+												"data": "2025-09-02 06:56:35.216000|545a60654e2abe158dfe645ebdfc8eed|c:\\windows\\ccm\\affinityagent.dll|c8a622f1353070355df020f000ec223823912f564e5d1aef52daaeff3ef66096",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.216000",
+												"data": "2025-09-02 06:56:35.216000|7718333a8362c1c95821b30621890be7|c:\\windows\\ccm\\lsutilities.dll|8d1511d276ba81ae28bb782885abcb4fe31cade2acd5c3555cc90cce18b7e28f",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.232000",
+												"data": "2025-09-02 06:56:35.232000|077f2bccfe2cee752525b0a899250ae3|c:\\windows\\system32\\secur32.dll|77f9a346a6ef10e8cee527dfcb8967013a3dd8398540d0bcd0a27bd813cd4596",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.232000",
+												"data": "2025-09-02 06:56:35.232000|d4c272df8558d77540a9309dfc425370|c:\\windows\\system32\\netapi32.dll|52adcdc2cf36add6d84392bd9aed9eaa257034da5be6e2e595c17b9594de944d",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.232000",
+												"data": "2025-09-02 06:56:35.232000|1d43a9adbc684bb4c3d6d1d2d400e280|c:\\windows\\system32\\activeds.dll|070b02eee4a0da9cdfcd814736672e4ab7b37028c65d17e6c77be62881bf1d0e",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.232000",
+												"data": "2025-09-02 06:56:35.232000|dd177dedf7c500fb39de72810f358e4e|c:\\windows\\system32\\dnsapi.dll|58516c62b505499dd2186e9c4b915b5bb1cb460bfdb5df2a072b62c7089e8584",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.232000",
+												"data": "2025-09-02 06:56:35.232000|10e680f6728d37a716a34728c5d40db4|c:\\windows\\ccm\\ccmgencert.dll|7081d64d299a619e370af7c1247a95bde2ab0017c9fd9a6179bf700fd9fb9649",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.232000",
+												"data": "2025-09-02 06:56:35.232000|19280e00efef3e1120cd9f82c11fbadd|c:\\windows\\ccm\\smscore.dll|fe3a758a9b48ec4c179b6a9412f971e1205432017312b7a1d387800594842917",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.247000",
+												"data": "2025-09-02 06:56:35.247000|267cb1cc542c4e248b243ddd658a4816|c:\\windows\\ccm\\fsputillib.dll|178ad23dcc3d9f50c9a665bf7c380fe2d627f0cf6a62be9b6e32f5a2926651bd",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.247000",
+												"data": "2025-09-02 06:56:35.247000|1cd96b1d04d3c3afcc3f1d0ee8eeb5eb|c:\\windows\\system32\\adsldpc.dll|7bd5ad6d09c7b97ab6cefccfad108f012ad19d2b588ded991ea326fc6e9f6b21",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.247000",
+												"data": "2025-09-02 06:56:35.247000|6b897289577bcdcd83806107a844bd6c|c:\\windows\\system32\\wldap32.dll|b7b48463330d5abd9eb243123991ab545a3dd6de6f24ae304059a3939b609bee",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.247000",
+												"data": "2025-09-02 06:56:35.247000|c310c5e9bacdd794fb9a4b0e73bd97d7|c:\\windows\\system32\\logoncli.dll|13ee3bce8a44682c7278ad21776c971d7ac672b46f9041037323a48da805df46",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.247000",
+												"data": "2025-09-02 06:56:35.247000|a634ee4153f568b96ddce2f46a1c94e0|c:\\windows\\system32\\netutils.dll|7e3a8145b67c75119511c26f48fe3423bed377d4551eb82674b47758dd30f8c9",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.247000",
+												"data": "2025-09-02 06:56:35.247000|cfd723e20287e63c35c0770016be2a0b|c:\\windows\\system32\\sspicli.dll|e990a0c8944df7f5510f75866db40c25a939f97a7170116b952791333b34a8ac",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.247000",
+												"data": "2025-09-02 06:56:35.247000|ecf48c4777e9afdd2fad8ad9de4cf1c9|c:\\windows\\system32\\nsi.dll|d089564d07fe17193deb6e3c1ec1a0980c0424b46f061e79ec040eb1bbae8ec7",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:56:35.419000",
+												"data": "2025-09-02 06:56:35.419000|7e03c8a9410342866b316b08c1da3251|c:\\windows\\ccm\\ccmglobalexpressionvalueprovider.dll|4692d4ffce193760f619f5020dc4751129606fa74a76bc00e517bf221e850b75",
+												"segment_id": 1756796325841
+								}, {
+												"type": "filemod",
+												"time": "2025-09-02 06:56:50.188000",
+												"data": "2|2025-09-02 06:56:50.188000|c:\\windows\\ccm\\logs\\appenforce.log||0||",
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:56:50.391000",
+												"data": {
+																"md5": "1f6b3733c0bd56d1957f8fe688cb5f71",
+																"path": "c:\\windows\\ccmcache\\s\\deploy-application.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "c5b9e54ed3eb7fcaa56523cf374619eccbb6cb922105c7f10bffd869e25ed132",
+																"pid": 19184,
+																"processId": "00132d4d-0000-4af0-01dc-1bd6c1e0000a-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "start",
+																"start": "2025-09-02T06:56:50.391000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "childproc",
+												"time": "2025-09-02 06:57:06.229000",
+												"data": {
+																"md5": "1f6b3733c0bd56d1957f8fe688cb5f71",
+																"path": "c:\\windows\\ccmcache\\s\\deploy-application.exe",
+																"commandLine": "",
+																"userName": "",
+																"sha256": "c5b9e54ed3eb7fcaa56523cf374619eccbb6cb922105c7f10bffd869e25ed132",
+																"pid": 19184,
+																"processId": "00132d4d-0000-4af0-01dc-1bd6c1e0000a-000000000001",
+																"is_suppressed": false,
+																"is_tampered": false,
+																"type": "end",
+																"end": "2025-09-02T06:57:06.229000Z"
+												},
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:57:06.261000",
+												"data": "2025-09-02 06:57:06.261000|bc45ffda9ee2237db838025f79fdf596|c:\\windows\\ccm\\clievent.dll|7dc434435949ebbcbfa48311fce70f6a8625ce17a61666d510b18786f99c8c60",
+												"segment_id": 1756796325841
+								}, {
+												"type": "modload",
+												"time": "2025-09-02 06:57:07.058000",
+												"data": "2025-09-02 06:57:07.058000|c01813d9566701c240b3ea85061053ac|c:\\windows\\ccm\\veprovider.dll|be7c792c4768e15b590494dae6724a9caf69a0b73c81a49eeea9f1b0753ea6bc",
+												"segment_id": 1756796325841
+								}],
+								"fork_children_count": 0,
+								"exec_events_count": 0,
+								"sorted_events_count": 132,
+								"binaries": {
+												"9D8E30DAF21108092D5980C931876B7E": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"4F79BD21F6365CC8F8AB80C6AF49FC5A": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"78FBA71779FD590F7DAEFFA1337DAFA9": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"E444DF1CDCDB54C50C39389486C55F83": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"077F2BCCFE2CEE752525B0A899250AE3": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7528CCABACCD5C1748E63E192097472A": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"A099CCA61F9E45A1ACF584602B756922": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7A400B5D87586001FC68AAD7D318D0C8": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"267CB1CC542C4E248B243DDD658A4816": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"6D0654BF58AB9FFBA4A0E38FE76807FB": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"24EBEDC58AA4FF23043BF79B05D267D4": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"D82BFA000690C998FD445B265A794EFA": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"19280E00EFEF3E1120CD9F82C11FBADD": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"70959B343C0ACAD9F3EF8053E10D4192": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"4608C7EADC8BF7CD17C0086B3D6314FF": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"33C9102222343D9366DC06D48CAEEF01": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"C4A9628229E54685D2E76AD6BF750B50": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"DCE780D29EE094BC9595857A65F13E39": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"1D43A9ADBC684BB4C3D6D1D2D400E280": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"ECF48C4777E9AFDD2FAD8AD9DE4CF1C9": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"A634EE4153F568B96DDCE2F46A1C94E0": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"D4C272DF8558D77540A9309DFC425370": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"4FAC0323EBF6275E9180313D23A09F2B": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7E6A07D205B7FC65EC043C72040C2295": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"2C6D07DCF4CDD6177B67F210019D5C61": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"C310C5E9BACDD794FB9A4B0E73BD97D7": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"B20EB7B148D126404D7057532A308D48": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"02AF98A610BD623AD410C93F62D25B5A": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"32DA96115C9D783A0769312C0482A62D": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"1E020FEE7FE4761B2F5792FF1C607DDA": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7B120395EAFF8AA3E4F342BF015AAB4E": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"CF9C57D58DD20D85FA362CC50DDB49C7": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"1CD96B1D04D3C3AFCC3F1D0EE8EEB5EB": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"9629330B999A1347D71E58433087F864": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"545A60654E2ABE158DFE645EBDFC8EED": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7EB8B76DEB30E5CE3663A9E254F4EF92": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"77312DB4517A21A3C5ABD2ED5E55919D": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"557672A2D4C8867CB6324E2E3F2E0046": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7ACBC57D268A691247B4A94FECFA42B4": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"0CF0388A82223280DC0760C81E806763": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"703F349983466211A4BC992398CA1333": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"8CA0B959F7BAC47D2CA37DFA4218FD7A": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"6403F09BC36853B18BB027FC78F685B6": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"80C2759EABCFC758D420A56EB8874455": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"10E680F6728D37A716A34728C5D40DB4": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"26E256E40CDB3B9CFE599653C8708CB0": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"94279D6CCB404D96472352AFF4D02E46": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"F1C4424DA1369D2196F150DDF21756BE": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"CE0D07DC874D66BCA8E67FBDEFD298A4": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"DCBCA459A2EB91D5962E6ECFC9127340": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"C0C0B4C611561F94798B62EB43097722": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"A9B946FCA8BA3B3AEBCDDA9C310AF4E4": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"485D15CD88EFAC823AD89C913F7B6D19": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"788C3BB76953E008A7F3298C832CEC02": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"44BF3195DC2F717FEE1DCDFD83FD04CB": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"4BBE26F877E41E644EC08CCEAF2DD1E2": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"FBAE15F41B0DBCC969FBE06D86FF4171": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"1DB5DDC74E90D3760877DDC4303633B0": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"B36CC0FFBFA1F162ACA87AEB44E76C69": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"8C351BB3839D22C9D374B8D4C1B072B3": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"B982F95CBCA977017E83F83135DBA1FA": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"4991C1BC92516754B2D0A4BA9D92CFA6": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"DD177DEDF7C500FB39DE72810F358E4E": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"CAB2731834469868230573B2126C7FD0": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"94F67D3703C30DE2CF08AECDB3132645": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"48769CC39AD050F7189261FC5275FFD7": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"82E44B0B0B989F51269A2E249561555A": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7718333A8362C1C95821B30621890BE7": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"6B897289577BCDCD83806107A844BD6C": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"A21183F072C66F5A3293C947D8A06F88": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"62E6651D32C277A4CABC05238F042028": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"995F7622A82558CD3123332261C10A38": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"9DE8BDE161B8654793698963DAAF9098": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"FE3472B66F56DA5031C554EB9F4AF2F0": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"E8825B77272917979D41E90CA72FF0D1": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"F3BD8CD0E9DEDFA5297AF3DD01E07A04": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"B1FF3434C53566391758CF3FB42F5D78": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"9A11BC56AA02B157AD0DA257922EA541": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"D89360052A989435779890BF9DF56A49": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"546EC8FEFF4BFBE0E08F2D4F6BB02070": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"198AE7B5F508A1BC9BA3F3CBD4680180": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"4DB2DD4D6F1FB28158B2B0B9FC676D7D": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"173CA8C126A5417E1B666885C1D404E7": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"17F7E64D20532103090938F39D2A328B": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"539538A976A8F011D50DA3FCE8478DB7": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"207839E3EA14071BEA6CB052F8144120": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"EF3EFF89A0A485C6FCBE777EF86D0F38": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"15BF195F4CE20235CE7CBAB5D419C9C9": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"E906D10EEF37806264C2D13B9E11D0DA": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"2A849391790DEA2A80A83F62A52354EC": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"CFD723E20287E63C35C0770016BE2A0B": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"1F6B3733C0BD56D1957F8FE688CB5F71": {
+																"digsig_result": "Unsigned",
+																"digsig_publisher": null
+												},
+												"C01813D9566701C240B3EA85061053AC": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"BC45FFDA9EE2237DB838025F79FDF596": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												},
+												"7E03C8A9410342866B316B08C1DA3251": {
+																"digsig_result": "Signed",
+																"digsig_publisher": "Microsoft Corporation"
+												}
+								}
+				}
+}
