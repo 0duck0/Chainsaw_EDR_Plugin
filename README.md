@@ -16,7 +16,9 @@ I have written scripts to export specified events from Carbon Black EDR via the 
 #### Example of how to use Chainsaw to leverage Sigma rules and generate alerts on dumped Carbon Black EDR JSON formatted process docs
 
 #### Provide the Sigma mapping file, Sigma rules folder, and directory that contains the JSON process documents
+```PowerShell
 .\chainsaw.exe hunt -m CB_Sigma_map.yml -s ".\Chainsaw_Project\chainsaw\rules\windows" ".\Chainsaw_Project\normalized_events"
+```
 
 #### OR get a CSV output returned by providing an output folder as follows:
 .\chainsaw.exe hunt --csv -o .\output -m CB_Sigma_map.yml -s path\to\sigma\rules .\Chainsaw_Project\CB_Process_Data\normalized_events
