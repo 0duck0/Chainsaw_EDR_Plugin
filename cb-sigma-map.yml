@@ -43,7 +43,17 @@ extensions:
      logsource.category: process_access
     filter:
      EventType: ProcessOpen
+  
+  - for:
+     logsource.category: dns_query
+    filter:
+     EventType: DnsQuery
 
+  - for:
+     logsource.category: process_termination
+    filter:
+     EventType: ProcessTerminate
+        
 groups:
  - name: Sigma
    timestamp: EventTime
@@ -63,6 +73,8 @@ groups:
        to: EventType 
 
      # Actor process (source/enclosing process)
+     - from: Image
+       to: SourceImage
      - from: SourceImage
        to: SourceImage
      - from: ProcessGuid
@@ -95,6 +107,10 @@ groups:
        to: TargetFilename
      - from: TargetObject
        to: TargetObject
+     - from: TargetImage
+       to: TargetImage
+     - from: TargetMd5
+       to: TargetMd5
 
      # Network
      - from: DestinationIp
@@ -115,3 +131,6 @@ groups:
        to: GrantedAccess
      - from: GrantedAccessMask
        to: GrantedAccessMask
+
+     - from: OriginalFileName
+       to: OriginalFileName
