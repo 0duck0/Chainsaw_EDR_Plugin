@@ -18,15 +18,15 @@ This solution has been tested successfully with [Chainsaw v2.12.0-1](https://git
 
 #### Provide the Sigma mapping file, Sigma rules folder, and directory that contains the JSON process documents
 ```PowerShell
-.\chainsaw.exe hunt -m CB_Sigma_map.yml -s ".\Chainsaw_Project\chainsaw\rules\windows" ".\Chainsaw_Project\normalized_events"
+.\chainsaw.exe hunt -m CB_Sigma_map.yml -s ".\Chainsaw_Project\chainsaw\rules\windows" ".\Chainsaw_Project\normalized_events" --load-unknown
 ```
 
 #### OR get a CSV output returned by providing an output folder as follows:
 ```PowerShell
-.\chainsaw.exe hunt --csv -o .\output -m CB_Sigma_map.yml -s path\to\sigma\rules .\Chainsaw_Project\CB_Process_Data\normalized_events
+.\chainsaw.exe hunt --csv -o .\output -m CB_Sigma_map.yml -s path\to\sigma\rules .\Chainsaw_Project\CB_Process_Data\normalized_events --load-unknown
 ```
 
 #### OR (if all processes events are contained in a single combined jsonl doc)
 ```PowerShell
-chainsaw hunt -m CB_Sigma_map.yml -s path\to\sigma\rules  .\Chainsaw_Project\CB_Process_Data\combined.normalized.jsonl
+chainsaw hunt -m CB_Sigma_map.yml -s path\to\sigma\rules  .\Chainsaw_Project\CB_Process_Data\combined.normalized.jsonl --load-unknown
 ```
