@@ -1,0 +1,117 @@
+name: Carbon Black (normalized) Sigma mappings
+kind: json
+rules: sigma
+
+extensions:
+ preconditions:
+  - for:
+     logsource.category: process_creation
+    filter:
+     EventType: ProcessCreate
+
+  - for:
+     logsource.category: process_termination
+    filter:
+     EventType: ProcessTerminate
+
+  - for:
+     logsource.category: image_load
+    filter:
+     EventType: ImageLoad
+
+  - for:
+     logsource.category: registry_event
+    filter:
+     EventType: Reg
+
+  - for:
+     logsource.category: file_event
+    filter:
+     EventType: File
+
+  - for:
+     logsource.category: network_connection
+    filter:
+     EventType: NetworkConnect
+
+  - for:
+     logsource.category: create_remote_thread
+    filter:
+     EventType: CreateRemoteThread
+
+  - for:
+     logsource.category: process_access
+    filter:
+     EventType: ProcessOpen
+
+groups:
+ - name: Sigma
+   timestamp: EventTime
+   filter:
+     EventType: "*"
+   fields:
+     # Common meta / timestamp
+     - from: UtcTime
+       to: EventTime
+     - from: Timestamp
+       to: EventTime
+     - from: Hostname
+       to: Host
+     - from: ComputerName
+       to: Host
+     - from: EventType
+       to: EventType 
+
+     # Actor process (source/enclosing process)
+     - from: SourceImage
+       to: SourceImage
+     - from: ProcessGuid
+       to: SourceProcessId
+     - from: ProcessId
+       to: SourcePid
+
+     # Process creation (childproc start)
+     - from: Image
+       to: NewProcessName
+     - from: CommandLine
+       to: ChildCommandLine
+     - from: User
+       to: ChildUser
+     - from: sha256
+       to: NewProcessSHA256
+     - from: md5
+       to: NewProcessMD5
+
+     # Image loads
+     - from: ImageLoaded
+       to: ImageLoaded
+     - from: sha256
+       to: HashSha256
+     - from: md5
+       to: HashMd5
+
+     # Files / Registry
+     - from: TargetFilename
+       to: TargetFilename
+     - from: TargetObject
+       to: TargetObject
+
+     # Network
+     - from: DestinationIp
+       to: RemoteIP
+     - from: DestinationPort
+       to: RemotePort
+     - from: SourceIp
+       to: LocalIP
+     - from: SourcePort
+       to: LocalPort
+     - from: Protocol
+       to: Proto
+     - from: DestinationHostname
+       to: Domain
+
+     # Process access / cross-proc
+     - from: GrantedAccess
+       to: GrantedAccess
+     - from: GrantedAccessMask
+       to: GrantedAccessMask
