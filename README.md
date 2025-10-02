@@ -18,9 +18,9 @@ I have written scripts to export specified events from Carbon Black EDR via the 
 #### Provide the Sigma mapping file, Sigma rules folder, and directory that contains the JSON process documents
 .\chainsaw.exe hunt -m CB_Sigma_map.yml -s ".\Chainsaw_Project\chainsaw\rules\windows" ".\Chainsaw_Project\normalized_events"
 
-### OR get a CSV output returned by providing an output folder as follows:
+#### OR get a CSV output returned by providing an output folder as follows:
 .\chainsaw.exe hunt --csv -o .\output -m CB_Sigma_map.yml -s path\to\sigma\rules .\Chainsaw_Project\CB_Process_Data\normalized_events
 
-### OR (if all processes events are contained in a single combined jsonl doc)
+#### OR (if all processes events are contained in a single combined jsonl doc)
 
 chainsaw hunt -m CB_Sigma_map.yml -s path\to\sigma\rules  .\Chainsaw_Project\CB_Process_Data\combined.normalized.jsonl
