@@ -1,0 +1,103 @@
+add an ISO time helper
+
+Add this near your other helpers in Convert-CBEventsFlatten.ps1 (and also in Expand-CBWrapper-ToFlat.ps1):
+
+function _IsoUtc {
+  param([string]$s)
+  if ([string]::IsNullOrWhiteSpace($s)) { return $null }
+  $formats = @(
+    'yyyy-MM-dd HH:mm:ss.ffffff',
+    'yyyy-MM-dd HH:mm:ss.fff',
+    'yyyy-MM-dd HH:mm:ss',
+    "yyyy-MM-dd'T'HH:mm:ss.ffffff'Z'",
+    "yyyy-MM-dd'T'HH:mm:ss.fff'Z'",
+    "yyyy-MM-dd'T'HH:mm:ss'Z'"
+  )
+  foreach ($f in $formats) {
+    try {
+      $dt = [datetime]::ParseExact($s.Trim(), $f, [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::AssumeUniversal)
+      return $dt.ToUniversalTime().ToString("yyyy-MM-dd'T'HH:mm:ss.fffffff'Z'")
+    } catch {}
+  }
+  # Last resort: generic parse
+  try {
+    $dt = [datetime]::Parse($s.Trim(), [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::AssumeUniversal)
+    return $dt.ToUniversalTime().ToString("yyyy-MM-dd'T'HH:mm:ss.fffffff'Z'")
+  } catch {
+    # If we can’t parse, at least coerce the separator and add Z
+    return ($s.Trim() -replace ' ', 'T') + 'Z'
+  }
+}
+
+Patch 2 — use _IsoUtc everywhere you set event times
+In Convert-CBEventsFlatten.ps1 (inside Add-DataFieldsToEvent cases)
+
+Replace lines that assign eventTime like:
+
+$df['eventTime'] = _SafeIndex $p 0
+
+
+with:
+
+$df['eventTime'] = _IsoUtc (_SafeIndex $p 0)
+
+
+Apply that to these cases:
+
+modload ($p[0])
+
+fileless_scriptload ($p[0])
+
+filemod ($p[1])
+
+crossproc ($p[1])
+
+regmod ($p[1])
+
+If you also copy top-level time, normalize it too wherever you set it:
+
+$out['time'] = _IsoUtc $out['time']
+
+In Expand-CBWrapper-ToFlat.ps1 (the synthetic process-creation event)
+
+Change:
+
+time = _AsUtc ($proc.start)
+...
+data_fields = @{
+  eventTime = _AsUtc ($proc.start)
+  ...
+}
+
+
+to:
+
+time = _IsoUtc ($proc.start)
+...
+data_fields = @{
+  eventTime = _IsoUtc ($proc.start)
+  ...
+}
+
+
+And if you fall back to $wrapper.time, also wrap with _IsoUtc.
+
+Optional: quick one-off fixer for already-flattened files
+
+If you’ve already produced normalized_CBdata_flat and just want to fix timestamps in place:
+
+$flat = 'E:\Chainsaw_Project\normalized_CBdata_flat'
+Get-ChildItem $flat -Filter *.json -File -Recurse | ForEach-Object {
+  $arr = Get-Content $_.FullName -Raw | ConvertFrom-Json
+  foreach ($ev in $arr) {
+    if ($ev.PSObject.Properties.Name -contains 'EventTime') { $ev.EventTime = _IsoUtc $ev.EventTime }
+    if ($ev.PSObject.Properties.Name -contains 'time')      { $ev.time      = _IsoUtc $ev.time }
+    if ($ev.data_fields) {
+      if ($ev.data_fields.eventTime) { $ev.data_fields.eventTime = _IsoUtc $ev.data_fields.eventTime }
+    }
+  }
+  $arr | ConvertTo-Json -Depth 64 | Set-Content -Encoding UTF8 $_.FullName
+}
+
+
+(Add the _IsoUtc function to your shell first or dot-source it from a small helper.)
