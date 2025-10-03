@@ -1,0 +1,161 @@
+name: Carbon Black normalized → Sysmon (Chainsaw)
+kind: json
+rules: sigma
+
+extensions:
+  preconditions:
+    # Process creation (your synthetic "wrapper-as-event" and real childproc)
+    - for: { logsource.category: process_creation }
+      filter: { type: childproc }
+
+    # Image load
+    - for: { logsource.category: image_load }
+      filter: { type: modload }
+
+    # File events
+    - for: { logsource.category: file_event }
+      filter: { type: filemod }
+
+    # Registry events
+    - for: { logsource.category: registry_event }
+      filter: { type: regmod }
+
+    # Network connections
+    - for: { logsource.category: network_connection }
+      filter: { type: netconn }
+
+    # Process access (Sysmon EID 10 semantics)
+    - for: { logsource.category: process_access }
+      filter:
+        type: crossproc
+        data_fields.action: ProcessOpen
+
+    # Create Remote Thread (Sysmon EID 8 semantics-ish)
+    - for: { logsource.category: create_remote_thread }
+      filter:
+        type: crossproc
+        data_fields.action: RemoteThread
+
+    # Optional: treat :53 TCP/UDP netconns as dns_query
+    - for: { logsource.category: dns_query }
+      filter:
+        type: netconn
+        data_fields.DestinationPort: 53
+        data_fields.protocol: [ UDP, TCP ]
+
+groups:
+  - name: Sigma
+    # Sigma field name that we'll populate from your JSON
+    timestamp: EventTime
+
+    # Make every record eligible; preconditions above will narrow per rule
+    filter: { Provider: "*" }
+
+    fields:
+      # ---------- Timestamp / host ----------
+      - from: EventTime                # Sigma expects EventTime
+        to: data_fields.eventTime
+      - from: EventTime
+        to: time                       # fallback
+      - from: Host
+        to: hostname
+
+      # ---------- Actor (enclosing) process context ----------
+      - from: Image
+        to: process.path               # wrapper-level image
+      - from: CommandLine
+        to: cmdline
+      - from: User
+        to: username
+      - from: ProcessId
+        to: process_pid
+      - from: ParentImage
+        to: parent_name
+      - from: ParentProcessId
+        to: parent_pid
+
+      # ---------- Process creation (childproc) ----------
+      - from: Image
+        to: data_fields.path
+      - from: CommandLine
+        to: data_fields.commandLine
+      - from: User
+        to: data_fields.userName
+      - from: HashSha256
+        to: data_fields.sha256
+      - from: HashMd5
+        to: data_fields.md5
+      - from: ProcessId
+        to: data_fields.pid
+
+      # ---------- Image load (modload) ----------
+      - from: ImageLoaded
+        to: data_fields.ImageLoaded
+      - from: HashSha256
+        to: data_fields.sha256
+      - from: HashMd5
+        to: data_fields.md5
+
+      # ---------- File events (filemod) ----------
+      - from: TargetFilename
+        to: data_fields.path
+      - from: FileName
+        to: data_fields.filename
+      - from: FileOperation
+        to: data_fields.operation
+      - from: FileOperationCode
+        to: data_fields.operationCode
+      - from: FileTypeCode
+        to: data_fields.fileTypeCode
+      - from: FileType
+        to: data_fields.fileTypeName
+      - from: HashMd5
+        to: data_fields.postWriteMd5
+      - from: HashSha256
+        to: data_fields.sha256
+
+      # ---------- Registry events (regmod) ----------
+      - from: TargetObject
+        to: data_fields.registry_path
+      - from: RegistryKey
+        to: data_fields.registry_key
+      - from: RegistryValue
+        to: data_fields.registry_value
+      - from: RegistryOperation
+        to: data_fields.reg_action
+      - from: RegistryOperationCode
+        to: data_fields.flag
+
+      # ---------- Process access / remote thread ----------
+      - from: TargetImage
+        to: data_fields.targetPath
+      - from: TargetImageName
+        to: data_fields.targetName
+      - from: GrantedAccess
+        to: data_fields.grantedAccess
+      - from: TargetHashMd5
+        to: data_fields.md5
+      - from: TargetHashSha256
+        to: data_fields.sha256
+      - from: TargetProcessGuid
+        to: data_fields.processId
+
+      # ---------- Network (netconn) ----------
+      - from: SourceIp
+        to: data_fields.SourceIp
+      - from: SourcePort
+        to: data_fields.SourcePort
+      - from: DestinationIp
+        to: data_fields.DestinationIp
+      - from: DestinationPort
+        to: data_fields.DestinationPort
+      - from: Protocol
+        to: data_fields.protocol
+      - from: DestinationHostname
+        to: data_fields.domain
+
+      # ---------- DNS (projected from netconn:53) ----------
+      - from: QueryName
+        to: data_fields.domain
+      - from: QueryResults
+        to: data_fields.DestinationIp
