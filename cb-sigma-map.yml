@@ -1,136 +1,131 @@
-name: Carbon Black (normalized) Sigma mappings
+name: Carbon Black → Sigma (normalized)
 kind: json
 rules: sigma
 
 extensions:
- preconditions:
-  - for:
-     logsource.category: process_creation
-    filter:
-     EventType: ProcessCreate
+  preconditions:
+    - for:
+        logsource.category: process_creation
+      filter:
+        EventType: ProcessCreate
 
-  - for:
-     logsource.category: process_termination
-    filter:
-     EventType: ProcessTerminate
+    - for:
+        logsource.category: process_termination
+      filter:
+        EventType: ProcessTerminate
 
-  - for:
-     logsource.category: image_load
-    filter:
-     EventType: ImageLoad
+    - for:
+        logsource.category: image_load
+      filter:
+        EventType: ImageLoad
 
-  - for:
-     logsource.category: registry_event
-    filter:
-     EventType: Reg
+    - for:
+        logsource.category: registry_event
+      filter:
+        EventType: Reg
 
-  - for:
-     logsource.category: file_event
-    filter:
-     EventType: File
+    - for:
+        logsource.category: file_event
+      filter:
+        EventType: File
 
-  - for:
-     logsource.category: network_connection
-    filter:
-     EventType: NetworkConnect
+    - for:
+        logsource.category: network_connection
+      filter:
+        EventType: NetworkConnect
 
-  - for:
-     logsource.category: create_remote_thread
-    filter:
-     EventType: CreateRemoteThread
+    - for:
+        logsource.category: create_remote_thread
+      filter:
+        EventType: CreateRemoteThread
 
-  - for:
-     logsource.category: process_access
-    filter:
-     EventType: ProcessOpen
-  
-  - for:
-     logsource.category: dns_query
-    filter:
-     EventType: DnsQuery
+    - for:
+        logsource.category: process_access
+      filter:
+        EventType: ProcessOpen
 
-  - for:
-     logsource.category: process_termination
-    filter:
-     EventType: ProcessTerminate
-        
 groups:
- - name: Sigma
-   timestamp: EventTime
-   filter:
-     EventType: "*"
-   fields:
-     # Common meta / timestamp
-     - from: UtcTime
-       to: EventTime
-     - from: Timestamp
-       to: EventTime
-     - from: Hostname
-       to: Host
-     - from: ComputerName
-       to: Host
-     - from: EventType
-       to: EventType 
+  - name: Sigma
+    timestamp: EventTime
+    filter:
+      EventType: "*"
+    fields:
+      # Common
+      - from: UtcTime
+        to: EventTime
+      - from: Timestamp
+        to: EventTime
+      - from: Hostname
+        to: Host
+      - from: ComputerName
+        to: Host
+      - from: EventType
+        to: EventType
 
-     # Actor process (source/enclosing process)
-     - from: Image
-       to: SourceImage
-     - from: SourceImage
-       to: SourceImage
-     - from: ProcessGuid
-       to: SourceProcessId
-     - from: ProcessId
-       to: SourcePid
+      # Actor (enclosing/source process)
+      - from: SourceImage
+        to: SourceImage
+      - from: ProcessGuid
+        to: SourceProcessId
+      - from: ProcessId
+        to: SourcePid
 
-     # Process creation (childproc start)
-     - from: Image
-       to: NewProcessName
-     - from: CommandLine
-       to: ChildCommandLine
-     - from: User
-       to: ChildUser
-     - from: sha256
-       to: NewProcessSHA256
-     - from: md5
-       to: NewProcessMD5
+      # Process creation / childproc
+      - from: Image
+        to: Image
+      - from: CommandLine
+        to: CommandLine
+      - from: User
+        to: User
+      - from: ParentImage
+        to: ParentImage
+      - from: ParentProcessId
+        to: ParentProcessId
+      - from: md5
+        to: md5
+      - from: sha256
+        to: sha256
 
-     # Image loads
-     - from: ImageLoaded
-       to: ImageLoaded
-     - from: sha256
-       to: HashSha256
-     - from: md5
-       to: HashMd5
+      # Image load
+      - from: ImageLoaded
+        to: ImageLoaded
 
-     # Files / Registry
-     - from: TargetFilename
-       to: TargetFilename
-     - from: TargetObject
-       to: TargetObject
-     - from: TargetImage
-       to: TargetImage
-     - from: TargetMd5
-       to: TargetMd5
+      # Registry / File
+      - from: TargetObject
+        to: TargetObject
+      - from: TargetFilename
+        to: TargetFilename
+      - from: RegOp
+        to: RegOp
+      - from: FileOp
+        to: FileOp
 
-     # Network
-     - from: DestinationIp
-       to: RemoteIP
-     - from: DestinationPort
-       to: RemotePort
-     - from: SourceIp
-       to: LocalIP
-     - from: SourcePort
-       to: LocalPort
-     - from: Protocol
-       to: Proto
-     - from: DestinationHostname
-       to: Domain
+      # Network
+      - from: DestinationIp
+        to: DestinationIp
+      - from: DestinationPort
+        to: DestinationPort
+      - from: SourceIp
+        to: SourceIp
+      - from: SourcePort
+        to: SourcePort
+      - from: Protocol
+        to: Protocol
+      - from: DestinationHostname
+        to: DestinationHostname
+      - from: Direction
+        to: Direction
 
-     # Process access / cross-proc
-     - from: GrantedAccess
-       to: GrantedAccess
-     - from: GrantedAccessMask
-       to: GrantedAccessMask
+      # Cross-proc
+      - from: GrantedAccessMask
+        to: GrantedAccessMask
+      - from: GrantedAccess
+        to: GrantedAccess
 
-     - from: OriginalFileName
-       to: OriginalFileName
+      # Optional signer enrichment
+      - from: Company
+        to: Company
+      - from: Signed
+        to: Signed
+      - from: SignatureStatus
+        to: SignatureStatus
