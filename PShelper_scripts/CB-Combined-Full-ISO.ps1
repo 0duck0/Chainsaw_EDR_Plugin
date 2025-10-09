@@ -1,7 +1,7 @@
 # CB-Combined-Full-ISO.ps1
 <#
 .\CB-Combined-Full-ISO.ps1 `
-  -InputPath "E:\Chainsaw_Project\CB_Process_Data\NCEUPWS14101T" `
+  -InputPath "E:\Chainsaw_Project\CB_Process_Data\NT" `
   -OutputPath "E:\Hayabusa_Project\hayabusa\flattened_CBdata" `
   -DropOriginalData
 
