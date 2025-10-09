@@ -382,7 +382,7 @@ function Do-Convert {
         eventTime     = _IsoOrOrig ($proc.start)
         path          = $proc.path
         ImageLoaded   = $null
-        childproc_name = _LeafFromPath $proc.path
+        childproc_name = $proc.process_name
         commandLine   = $proc.cmdline
         userName      = $proc.username
         md5           = $proc.process_md5
